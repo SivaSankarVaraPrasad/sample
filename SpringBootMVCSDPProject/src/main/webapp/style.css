@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* Navbar container */
+.navbar {
+    background-color: #333;  /* Dark background for the navbar */
+    overflow: hidden;  /* Ensure content stays on one line */
+    font-family: Arial, sans-serif;  /* Clean font style */
+    padding: 10px 0;  /* Add padding for a better look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+}
+
+/* Remove default list style */
+.navbar ul {
+    list-style-type: none;  /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Display items horizontally */
+    justify-content: center;  /* Center the navigation items */
+}
+
+/* Links inside navbar */
+.navbar ul li {
+    padding: 0 20px;  /* Space between each navigation item */
+}
+
+.navbar ul li a {
+    text-decoration: none;  /* Remove underline */
+    color: white;  /* Text color */
+    font-size: 18px;  /* Font size */
+    padding: 12
+}
+
+.navbar a:hover {
+    background-color: #ddd;  /* Light background on hover */
+    color: black;  /* Text color change on hover */
+}
+
+/* Add an active/current class for the selected link */
+.navbar a.active {
+    background-color: #4CAF50;  /* Green background for active */
+    color: white;  /* Keep white text */
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 400px;  /* Limit the width */
+    margin: 50px auto;  /* Center the form horizontally */
+    background-color: #f4f4f4;  /* Light background for contrast */
+    padding: 20px;  /* Add padding for space inside the container */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    font-family: Arial, sans-serif;  /* Clean font style */
+}
+
+/* Table Style */
+.form-container table {
+    width: 100%;  /* Full width of the container */
+    border-spacing: 10px;  /* Space between table rows */
+}
+
+/* Table cells */
+.form-container td {
+    padding: 8px 0;  /* Add space between the input elements */
+}
+
+/* Labels */
+.form-container label {
+    font-size: 16px;  /* Font size for labels */
+    color: #333;  /* Darker text color */
+}
+
+/* Input fields */
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    width: 100%;  /* Full width input fields */
+    padding: 10px;  /* Add padding inside the inputs */
+    border: 1px solid #ccc;  /* Light border */
+    border-radius: 4px;  /* Rounded edges */
+    font-size: 14px;  /* Font size for inputs */
+    box-sizing: border-box;  /* Ensure padding doesn't exceed width */
+    transition: border-color 0.3s ease;  /* Smooth border change */
+}
+
+/* Input focus effect */
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: #4CAF50;  /* Green border on focus */
+    outline: none;  /* Remove default outline */
+}
+
+/* Buttons */
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+    background-color: #4CAF50;  /* Green background for buttons */
+    color: white;  /* White text */
+    padding: 12px 20px;  /* Add padding inside the buttons */
+    font-size: 16px;  /* Font size for buttons */
+    border: none;  /* Remove borders */
+    border-radius: 4px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    margin-right: 10px;  /* Space between the buttons */
+    transition: background-color 
+}
